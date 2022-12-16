@@ -1,7 +1,7 @@
 import pickle
 import streamlit as st
 
-
+travel_model = pickle.load(open('travel_model.sav', 'rb'))
 
 st.title('Data Mining Prediksi Customer Travel')
 st.title('Fadlie Muhammad Agustien 191351029')
@@ -21,7 +21,7 @@ BookedHotelOrNot = st.text_input ('Input nilai Booked Hotel Or Not')
 trav_travel = ''
 
 if st.button('Test Prediksi Customer') :
-    trav_prediction = trav_prediction.predict([[Age, FrequentFlyer, AnnualIncomeClass, ServicesOpted, AccountSyncedToSocialMedia, BookedHotelOrNot]]) 
+    trav_prediction = travel_model.predict([[Age, FrequentFlyer, AnnualIncomeClass, ServicesOpted, AccountSyncedToSocialMedia, BookedHotelOrNot]]) 
 
     if(trav_prediction[0] == 1):
         trav_travel = 'Customer bukan target'
