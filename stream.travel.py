@@ -2,13 +2,13 @@ import pickle
 import streamlit as st
 
 
-travel_model = pickle.load(open('travel_model.sav', 'rb'))
+
 
 
 st.title('Data Mining Prediksi Customer Travel')
 st.title('Fadlie Muhammad Agustien 191351029')
 
-Age = st.text_input ('Input nilai Age')
+Age = st.number_input ('Input nilai Age')
 
 FrequentFlyer = st.number_input ('Input nilai Frequent Flyer')
 
