@@ -2,7 +2,7 @@ import pickle
 import streamlit as st
 
 
-
+travel_model = pickle.load(open('travel_model.sav', 'rb'))
 
 
 st.title('Data Mining Prediksi Customer Travel')
