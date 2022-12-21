@@ -1,7 +1,7 @@
 import pickle
 import streamlit as st
 
-
+travel_model = pickle.load(open('travel_model.sav', 'rb'))
 
 
 
