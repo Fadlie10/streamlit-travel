@@ -10,15 +10,15 @@ st.title('Fadlie Muhammad Agustien 191351029')
 
 Age = st.text_input ('Input nilai Age')
 
-FrequentFlyer = st.text_input ('Input nilai Frequent Flyer')
+FrequentFlyer = st.number_input ('Input nilai Frequent Flyer')
 
-AnnualIncomeClass = st.text_input ('Input nilai Annual Income Class')
+AnnualIncomeClass = st.number_input ('Input nilai Annual Income Class')
 
-ServicesOpted = st.text_input ('Input nilai Services Opted')
+ServicesOpted = st.number_input ('Input nilai Services Opted')
 
-AccountSyncedToSocialMedia = st.text_input ('Input nilai Account Synced To Social Media')
+AccountSyncedToSocialMedia = st.number_input ('Input nilai Account Synced To Social Media')
 
-BookedHotelOrNot = st.text_input ('Input nilai Booked Hotel Or Not')
+BookedHotelOrNot = st.number_input ('Input nilai Booked Hotel Or Not')
 
 trav_travel = ''
 
